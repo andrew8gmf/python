@@ -14,6 +14,8 @@ def imprime_grafo(g):
 
 # Método que dado um grafo e um vértice, retorne com o seu grau (numero inteiro das arestas incidentes)
 
+def grau(a):
+    return len(a)
 
 grafo = { }
 while True:
@@ -25,6 +27,12 @@ while True:
     insere_aresta(grafo, x, y)
 
 imprime_grafo(grafo)
+
+x = input("Digite o vertice que deseja saber o grau:")
+if x in grafo:
+    print("Grau do vertice", x, " = ", grau(grafo[x]))
+else:
+    print("Não existe vértice")
 
 
 
