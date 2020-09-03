@@ -57,3 +57,9 @@ if x in grafo and y in grafo:
     print(arestas(grafo, x, y))
 else:
     print("Um dos vertices não existe!")
+
+# Verificar se um grafo é regular (todos os vertices possuirem o mesmo grau)
+
+
+# Verificar se o grafo é completo
+# Grafo de N vertices com todos os graus de N-1
