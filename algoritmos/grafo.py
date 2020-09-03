@@ -33,17 +33,3 @@ if x in grafo:
     print("Grau do vertice", x, " = ", grau(grafo[x]))
 else:
     print("Não existe vértice")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
