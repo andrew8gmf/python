@@ -26,6 +26,8 @@ while True:
 
 imprime_grafo(grafo)
 
+########################################
+
 def busca_largura(grafo, vertice_fonte):
     
     visitados = []
@@ -46,6 +48,30 @@ def busca_largura(grafo, vertice_fonte):
     return visitados
 
 print("="*50)
-z = input("Escolha o vértice inicial da busca em largura: ")
+z = input("Digite o vértice inicial da busca em largura: ")
 
 print(busca_largura(grafo, z))
+
+########################################
+
+def busca_profundidade(inicio):               
+    visitados = []                
+    fila = []                  
+    caminho = []
+
+    fila.append(inicio)                  
+    visitados.append(inicio)  
+
+    while fila:                         
+        vertice = fila.pop()            
+        caminho.append(vertice)
+        for vizinho in grafo[vertice]:        
+            if vizinho not in visitados:       
+                visitados.append(vizinho)       
+                fila.append(vizinho)         
+    print(caminho)
+
+print("="*50)
+j = input("Digite o vértice inicial da busca em profundidade: ")
+
+busca_profundidade(j)
