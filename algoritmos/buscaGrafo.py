@@ -54,7 +54,7 @@ print(busca_largura(grafo, z))
 
 ########################################
 
-def busca_profundidade(inicio):               
+def busca_profundidade(grafo, inicio):               
     visitados = []                
     fila = []                  
     caminho = []
@@ -74,4 +74,4 @@ def busca_profundidade(inicio):
 print("="*50)
 j = input("Digite o vértice inicial da busca em profundidade: ")
 
-busca_profundidade(j)
+busca_profundidade(grafo, j)
